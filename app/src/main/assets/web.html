@@ -1,0 +1,64 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <script type="text/javascript">
+
+function javacalljs(){
+     document.getElementById("content").innerHTML =
+         "<br\>android调用了JS的无参函数";
+}
+
+function javacalljswith(arg){
+     document.getElementById("content").innerHTML =
+         ("<br\>"+arg);
+}
+
+function returnlocation(arg){
+    document.getElementById("content").innerHTML =
+         ("<br\>"+arg);
+}
+
+function returncontact(arg){
+    document.getElementById("content").innerHTML =
+         ("<br\>"+arg);
+}
+
+function gettxl1(arg){
+    document.getElementById("content1").innerHTML =
+         ("<br\>"+arg);
+}
+
+</script>
+</head>
+<body>
+HTML 内容显示 <br/>
+<h3><div id="content">内容显示</div></h3>
+<!--<br/>-->
+<!--<input type="button"  value="点击调用android端代码" onclick="window.test.startFunction()" />-->
+<!--<br/>-->
+<input type="button"  value="点击调用android端代码带参数" onclick="window.soogua.logininformation('15193148080')"  />
+
+<!--<br/>-->
+<!--<input type="button"  value="点击调用js端代码" onclick="window.test.startFunction1()"  />-->
+
+<!--<br/>-->
+<!--<input type="button"  value="点击调用js端代码带参数" onclick="window.test.startFunction1('你好吗')"  />-->
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<input style="height: 40px; font-size: 14px; width: 100%;" type="button"  value="调起位置信息" onclick="window.soogua.location()"  />
+
+<br/>
+<br/>
+<input style="height: 40px; font-size: 14px; width: 100%;" type="button"  value="调起联系人界面并获取通讯录" onclick="window.soogua.lianxiren()"  />
+<br/>
+<br/>
+<input style="height: 40px; font-size: 14px; width: 100%;" type="file" accept="image/*" capture="camera" value="调起相机"   />
+
+
+<h4><div id="content1">内容显示</div></h4>
+</body>
+</html>
